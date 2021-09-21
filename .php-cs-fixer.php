@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use PhpCsFixer\Fixer\FunctionNotation\NativeFunctionInvocationFixer;
+
 $finder = PhpCsFixer\Finder::create()
     ->in([__DIR__.'/bundle', __DIR__.'/tests'])
 
@@ -45,7 +47,11 @@ return (new PhpCsFixer\Config())
         'phpdoc_add_missing_param_annotation' => ['only_untyped' => false],
         'phpdoc_order' => true,
         'semicolon_after_instruction' => true,
-        'native_function_invocation' => true,
+        'native_function_invocation' => [
+            'include' => [NativeFunctionInvocationFixer::SET_ALL],
+            'scope' => 'namespaced',
+            'strict' => false, // or remove this line, as false is default value
+        ],
         'yoda_style' => true,
     ])
     ->setFinder($finder)
