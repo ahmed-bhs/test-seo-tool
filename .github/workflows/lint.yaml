@@ -1,4 +1,4 @@
-name: "Linter: Code Syntax"
+name: "Static analysis"
 
 on: [push, pull_request]
 
@@ -6,7 +6,6 @@ env:
     fail-fast: true
 
 jobs:
-
     linters:
         name: Linters
         runs-on: ubuntu-latest
