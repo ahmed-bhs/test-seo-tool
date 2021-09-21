@@ -64,6 +64,3 @@ jobs:
               if: always() && steps.install.outcome == 'success'
               run: /home/runner/.symfony/bin/symfony check:security
 
-            - name: aaa
-              if: always() && steps.install.outcome == 'success'
-              run: /home/runner/.symfony/bin/symfony console --help
