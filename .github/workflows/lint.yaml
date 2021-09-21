@@ -48,13 +48,9 @@ jobs:
               if: always() && steps.install.outcome == 'success'
               run: composer run phpcsfixer
 
-            - name: PHP CS FIXER
+            - name: PSLAM
               if: always() && steps.install.outcome == 'success'
-              run: composer run phpcsfixer
-
-            - name: PHP MD
-              if: always() && steps.install.outcome == 'success'
-              run: composer run phpmd
+              run: composer run pslam
 
             - name: TWIG CS
               if: always() && steps.install.outcome == 'success'
