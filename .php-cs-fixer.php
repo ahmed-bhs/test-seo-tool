@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 $finder = PhpCsFixer\Finder::create()
-    ->in(__DIR__.'/bundle', __DIR__.'/tests')
+    ->in([__DIR__.'/bundle', __DIR__.'/tests'])
 
 ;
 
