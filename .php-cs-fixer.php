@@ -19,6 +19,7 @@ return (new PhpCsFixer\Config())
         'phpdoc_align' => false,
         'phpdoc_separation' => false,
         'phpdoc_to_comment' => false,
+        'mb_str_functions' => true,
         'linebreak_after_opening_tag' => false,
         'cast_spaces' => false,
         'blank_line_after_opening_tag' => false,
