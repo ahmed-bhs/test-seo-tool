@@ -48,7 +48,7 @@ return (new PhpCsFixer\Config())
         'phpdoc_order' => true,
         'semicolon_after_instruction' => true,
         'native_function_invocation' => [
-            'include' => [NativeFunctionInvocationFixer::SET_ALL],
+            'include' => [NativeFunctionInvocationFixer::SET_COMPILER_OPTIMIZED ],
             'scope' => 'namespaced',
             'strict' => false, // or remove this line, as false is default value
         ],
