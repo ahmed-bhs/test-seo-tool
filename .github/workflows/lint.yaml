@@ -10,6 +10,7 @@ jobs:
         name: Linters
         runs-on: ubuntu-latest
         strategy:
+            fail-fast: true
             matrix:
                 php-version: ['7.3', '7.4']
 
