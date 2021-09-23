@@ -3,7 +3,7 @@ name: "Static analysis"
 on: [push, pull_request]
 
 env:
-    fail-fast: true
+    fail-fast: false
 
 jobs:
     linters:
